@@ -42,10 +42,12 @@
     <h3>We re-engineered the service we built for secure business meetings, Google Meet, to make it free and available for all.</h3>
     <div class="meet-action">
       <div class="new-meeting">
-        <span class="material-icons">
-          video_call
-          </span>
-          New meeting
+        <button class="new-meeting-btn">
+          <span class="material-icons">
+            video_call
+            </span>
+            New meeting
+        </button>
       </div>
       <div class="join-meeting">
         <span class="material-icons">
@@ -54,13 +56,16 @@
           <input type="text" name="" id="" placeholder="Enter a code or link">
       </div>
     </div>
-    <hr>
-    <h4 class="learn-more"><a href="#">Learn More</a> about Google Meet</h4>
+    <hr class="horizontal-line">
+    <h4 class="learn-more"><a href="#">Learn More</a> <span>about Google Meet</span> </h4>
   </div>
   <div class="features">
-    <img src="https://www.gstatic.com/meet/user_edu_brady_bunch_light_81fa864771e5c1dd6c75abe020c61345.svg" alt="featured-image" class="featured-image">
-    <h2 class="feature-heading">See everyone together</h2>
-    <p class="feature-text">To see more people at the same time, go to change layout in More options menu</p>
+    <div class="featured-image">
+      <span class="left-arrow"><</span><img src="https://www.gstatic.com/meet/user_edu_get_a_link_light_90698cd7b4ca04d3005c962a3756c42d.svg" alt="featured-image" ><span class="right-arrow">></span>
+    </div>
+    <h2 class="feature-heading">Get a link you can share</h2>
+    <p class="feature-text"><span>Click </span><strong>New meeting</strong><span> to get a link you can send to people you want to meet with</span></p>
+    <div class="rounds"><div class="round round-active"></div><div class="round"></div><div class="round"></div><div class="round"></div></div>
   </div>
 </main>
 </body>
