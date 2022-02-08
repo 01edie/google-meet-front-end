@@ -10,6 +10,7 @@
 
 html {
   font-size: 16px;
+  user-select: none;
 }
 
 body {
@@ -31,6 +32,7 @@ a {
 
 /* project css  */
 
+/* navbar starts  */
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -90,6 +92,7 @@ a {
 .container{
   display: flex;
   margin-top: 5rem;
+  
 }
 
 .meeting{
@@ -98,6 +101,7 @@ a {
   flex-direction: column;
   gap: 1.5rem;
   padding: 3rem 3rem;
+  padding-bottom: 0rem;
 }
 .meeting h1{
   opacity: 0.85;
@@ -193,9 +197,11 @@ a {
   color: black;
   opacity: 0.5;
 }
+
 .learn-more{
   font-family: serif;
   opacity: 1.0;
+  
 }
 .learn-more span{
   opacity: 0.5;
@@ -205,6 +211,12 @@ a {
 .learn-more a{
   color: #4f93ed;
   
+}
+
+footer .learn-more{
+  margin-left: 10rem;
+  display: none;
+  margin-top: 2rem;
 }
 .features{
   margin-top: 1.5rem;
@@ -264,4 +276,73 @@ a {
 }
 .round-active{
   background-color: #1a73e8;
+}
+
+/* container ends  */
+
+/* mmedia queries */
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+  html{
+    font-size: 14px;
+  }
+  .new-meeting-btn{
+    font-size: 0.85rem;
+  }
+  .join-meeting input{
+    font-size: 0.9rem;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .meeting h1, .meeting h3{
+    display: none;
+  }
+  .meeting{
+    width: 70vw;
+    padding-top: 1rem;
+  }
+  .learn-more{
+    display: none;
+  }
+  footer .learn-more{
+    display: block;
+  }
+  .datetime{
+    display: none;
+  }
+}
+
+/*Extra Small Devices, Tablets */
+
+@media only screen and (max-width : 575px) {
+  html{
+    font-size: 12px;
+  }
+  .meeting{
+    width: 90vw;
+    align-items: center;
+  }
+}
+
+/* custom  */
+
+@media only screen and (max-width : 420px) {
+  html{
+    font-size:12px;
+  }
+  .header-functions{
+    display: none  !important;
+  }
+  .meeting{
+    width: 80vw;
+    align-items: center;
+  }
 }
